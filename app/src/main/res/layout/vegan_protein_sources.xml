@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Vegan_Protein_Sources">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="VEGAN PROTEIN POWDERS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/hemp_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/hempseeds_vegan" />
+
+            <TextView
+                android:id="@+id/hemp_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Hemp Powder"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hemp_imagebutton"
+                app:layout_constraintWidth_percent="0.30" />
+
+            <ImageButton
+                android:id="@+id/chiaseed_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/chiaseeds" />
+
+            <TextView
+                android:id="@+id/pumpkinseed_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Pumpkin Seed Powder"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/chiaseed_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/hemp_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/pumpkinseed_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/pumpkinseed_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/chiaseed_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/hemp_imagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/pumpkinseeds" />
+
+            <TextView
+                android:id="@+id/chiaseed_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Chia Seed Powder"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chiaseed_imagebutton"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30" />
+
+
+            <ImageButton
+                android:id="@+id/riceprotein_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/walnutflour_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/peaprotein_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/pumpkinseed_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/riceprotein" />
+
+            <TextView
+                android:id="@+id/riceprotein_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Rice Protein Powder"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/walnutflour_textview"
+                app:layout_constraintStart_toEndOf="@+id/peaprotein_textview2"
+                app:layout_constraintTop_toBottomOf="@+id/riceprotein_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/peaprotein_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hemp_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/peaprotein" />
+
+            <TextView
+                android:id="@+id/peaprotein_textview2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Pea Protein Powder"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/peaprotein_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/walnutflour_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chiaseed_textview"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/walnutflour" />
+
+            <TextView
+                android:id="@+id/walnutflour_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Walnut Flour"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/walnutflour_imagebutton"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

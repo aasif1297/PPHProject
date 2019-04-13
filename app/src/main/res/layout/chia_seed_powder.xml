@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Chia_Seed_Powder">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="CHIA SEED POWDER"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/chiaseeds"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Salvia hispanica"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Chia Sprout, Germe de Chia, Graine de Chia, Graine de Salba, Huile de Chia, Pinole, S. Hispanica, Salba, Salba Grain."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_chia"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_chia"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Native to Southern Mexico and Guatemala, where they have been cultivated for thousands of years, chia seeds benefits are legendary. Historical records surviving the European invasion of the Americas suggest they were farmed as long ago as 3400 BC. In Aztec times they were the 3rd most cultivated crop (behind beans and maize), with taxes often paid in chia seeds. Aztec warriors carried chia seeds with them as standard rations, trading them with tribes as far north as the Apache.\n\nChia seeds are rich in fatty acids, anti-oxidants (chlorogenic acid, caffeic acids, myricetin, quercetin, kaempferol, flavonols), alpha-linolenic and linoleic acid, dietary fibre and are a complete protein (providing all 9 of the essential amino acids). Chia seeds are very similar to flax seeds (high fatty acid content), with the exception of Chia's high anti-oxidant content. This is not only a nutritional bonus but means the valuable oils will not go rancid. They are hydrophilic - meaning when mixed with water they form a gel - this makes an excellent vegan egg replacement and a great thickener for gravies, soups and stews.\n\nThese nutritional powerhouses also contain valuable B Vitamins and are especially mineral dense, with more Iron than spinach and more Calcium than milk. Magnesium, Phosphorus, Zinc, Copper, Manganese, Potassium and Selenium make up the rest of their impressive nutrient profile."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Damiana">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="DAMIANA LEAF"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/damiana"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Turnera diffusa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Old Woman's Broom, Mexican Holly, Herba de la Pastora, Aphrodisiakos, Goddess of Love, Love Leaf, Hierba del Amor, Chanana."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="It is believed that Damiana was first used by the indigenous Guaycura in the Baja region of Mexico. Originally taken during religious ceremonies, it was later banned due to its 'passion inspiring properties' getting out of hand! When the Guaycura started trading with the Aztecs, this herb found its way across the rest of the Americas. Throughout Central and South America there are ethnobotanical reports of Damiana's therapeutic qualities.\n\nDamiana encourages the cleansing of the gastrointestinal tract, forcing the body to eliminate harmful chemicals and toxins that would normally hinder the digestion process. This natural herb can also be used to treat dyspepsia or impaired digestion as it actively slows down the digestive process.\n\nOne of the active constituents of this herb is thymol, and it is this compound that is responsible for Damiana’s life enhancing and stimulating effect on the mind and body. Many herbalists prescribe Damiana for mild to moderate depression, anxiety and nervous exhaustion. Its stimulating and restorative properties make it a valuable herb for anxiety and depression occurring together – as can often happen as a result of long term stress."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

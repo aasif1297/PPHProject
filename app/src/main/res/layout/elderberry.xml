@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Elderberry">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="ELDERBERRY"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/elderberry"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Sambucus"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="Over the centuries, elderberry has been used to treat colds, flu, fever, burns, cuts, and more than 70 other maladies, from toothache to the plague. In the 17th century, John Evelyn, a British researcher, declared, “If the medicinal properties of its leaves, bark, and berries were fully known, I cannot tell what our countryman could ail for which he might not fetch a remedy (from the elderberry), either for sickness or wounds.”\n\nElderberries are particularly rich in flavonoids, especially anthocyanins which are responsible for their deep purple (almost black) colouring. These powerful antioxidants work to keep the immune system strong and resilient. Research has shown that the anthocyanins in elderberries boost the production of cytokines – proteins that act as messengers within the immune system – thereby enhancing the body’s immune response. Cytokines play a crucial role in the immune system’s response to disease and work in ways very similar to hormones. They can be both inflammatory or anti-inflammatory depending on what is needed and are released by immune cells either directly into the blood stream or locally into body tissue during an immune response.\n\nThe Elderflower is an 'anti-catarrhal' herb, meaning it is extremely effective for runny noses and congestion. Anti-catarrhal herbs prevent excess mucous formation and aid in removing mucous and reducing inflammation in the body.\n\nMost commonly affecting women (although men are certainly not exempt), UTI’s, cystitis and bladder infections cause a world of misery and pain. The constant urge to urinate, accompanied by a burning sensation can leave the sufferer feeling housebound and depressed. Elderberry tea may bring significant relief from this debilitating condition – first and foremost acting as a diuretic. This is important as it causes the kidneys to continually flush out toxins whilst increasing urination. This in turn helps to flush out the bacteria that cause cystitis, reducing the likelihood of the infection spreading to the bladder and/or kidneys and may also help to reduce its duration. Its anti-inflammatory properties may help to reduce inflammation, potentially reducing the burning and pain that accompanies urination."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

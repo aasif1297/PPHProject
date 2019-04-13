@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Shatvari">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="SHATAVARI"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/shatavari"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Asparagus racemosus"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Asparagus"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Shatavari, or Asparagus racemosus, has been used for centuries in Ayurveda to support the reproductive system, particularly for females, and as a support for the digestive system, especially in cases of excess pitta. Translated as “having one hundred roots” and also referred to as meaning “having one hundred husbands”.\n\nShatavari’s name gives reference to its traditional use as a rejuvenative tonic for the female reproductive system. This support is not only for the young woman, but also for women in their middle and elder years, to help them gracefully transition through the natural phases of life, including menopause.\n\nThe nourishing properties of Shatavari are used traditionally to support a number of systems and functions in the body: a healthy female reproductive system; healthy levels of breast milk production; supports already balanced female hormones; supportive of male reproductive system as well; soothing effect on the digestive tract; healthy peristalsis of bowels; moisturizing support of the respiratory tract; promotes healthy energy levels and strength; supports the immune system and contains natural antioxidant properties."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

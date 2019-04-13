@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Muscleups_Exercise">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="MUSCLE UPS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/normal_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/muscleup" />
+
+            <TextView
+                android:id="@+id/pullup_normal_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Normal Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/normal_muscleup"
+                app:layout_constraintWidth_percent="0.30" />
+
+            <ImageButton
+                android:id="@+id/slow_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/slow_muscleups" />
+
+            <TextView
+                android:id="@+id/chinup_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Banded Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/pull_closegrip_textview"
+                app:layout_constraintStart_toEndOf="@+id/pullup_normal_textview"
+                app:layout_constraintTop_toBottomOf="@+id/banded_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/banded_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/slow_muscleup"
+                app:layout_constraintStart_toEndOf="@+id/normal_muscleup"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/banded_muscleup" />
+
+            <TextView
+                android:id="@+id/pull_closegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Slow Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slow_muscleup"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30" />
+
+
+            <ImageButton
+                android:id="@+id/widegrip_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/xgrip_muscleup"
+                app:layout_constraintStart_toEndOf="@+id/closegrip_muscleup"
+                app:layout_constraintTop_toBottomOf="@+id/chinup_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/wide_muscleup" />
+
+            <TextView
+                android:id="@+id/pull_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Wide Grip Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/chin_widegrip_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintTop_toBottomOf="@+id/widegrip_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/closegrip_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pullup_normal_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/closegrip_muscleup" />
+
+            <TextView
+                android:id="@+id/chin_closegrip_textview2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Close Grip Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/closegrip_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/xgrip_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pull_closegrip_textview"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/xgrip_muscleup" />
+
+            <TextView
+                android:id="@+id/chin_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="X-Grip Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xgrip_muscleup"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/lsit_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/lsit_muscleup" />
+
+            <TextView
+                android:id="@+id/bandpulls_textview3"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="L-Sit Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lsit_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/ring_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/weighted_muscleup"
+                app:layout_constraintStart_toEndOf="@+id/lsit_muscleup"
+                app:layout_constraintTop_toBottomOf="@+id/pull_widegrip_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/ring_muscleup" />
+
+            <TextView
+                android:id="@+id/deadhang_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Ring Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/isometric_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/bandpulls_textview3"
+                app:layout_constraintTop_toBottomOf="@+id/ring_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/weighted_muscleup"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_widegrip_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/weighted_muscleup" />
+
+            <TextView
+                android:id="@+id/isometric_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Weighted Muscle Up"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/bandpulls_textview3"
+                app:layout_constraintTop_toBottomOf="@+id/weighted_muscleup"
+                app:layout_constraintWidth_percent="0.3" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

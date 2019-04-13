@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Hemp_Leaf">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Hemp Leaf"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hempleaf_new"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Cannabis sativa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Hoenep, Hennep, Chanvre, Hanf, Hampu, Kender, Konopi, Banga, Cañamo, Canapa, Cây Gai, Kalamu, Rami &amp; Qanneb."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:fontFamily="@font/brawler"
+            android:text="Hemp was first brought to Britain by the Romans 2000 years ago and growing it became commonplace, continuing into the mid-1940s. In 1533, Henry VIII made hemp cultivation the law of the land, for every 60 acres, farmers had to set aside one rood (about 1/4 acre) for flax or hemp. He mandated hemp cultivation in order to make more rope, sails, nets and other naval equipment. America's World War II slogan was 'Hemp for Victory' which encouraged farmers to help the war effort by sowing crops of hemp.\n\nOne of the most nutritionally complete foods in the world, hemp delivers complete protein (containing all 9 of the essential amino acids) in highly digestible form. The two main proteins are the high quality storage proteins edestin and albumin which are easily digested, contain nutritionally significant amounts of all the essential amino acids and are especially high in arginine. These storage proteins have a similar cellular structure to a protein manufactured in human blood which is why this hemp protein is so easily digestible, making the seeds an excellent source of plant based protein for vegetarians and vegans.\n\nIn addition to the immuno supportive nutrients it contains, hemp is the premier plant-seed provider of globulin starting material — the precursor to immunoglobulins. These compounds are responsible for both the natural and acquired immunity that a person has to fight off foreign microbes. Eating hemp seeds will ensure the immune system has the reservoir of immunoglobulin resources needed to make disease-eradicating antibodies."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

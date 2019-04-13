@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Youtube_Russian_Dips">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="RUSSIAN DIPS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/russian_dips"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_intermediate_exercises"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="INTERMEDIATE"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/russiandips_youtubePlay"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_play_russiandips"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/youtube_logo_new"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+            android:background="#cc2900" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Muscles Worked:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arm_muscle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView2"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/chest_muscle"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/trirong_light"
+                android:background="@drawable/button_design_musclesworked"
+                android:text="prerequisites:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="15-20 Parallel Dips"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Equipment Required:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="Access to Parallel Dip Bars"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Technique focal points"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="\u2022 Start by grabbing the parallel bars with both your arms and elbows locked out.\n\n\u2022 There should preferably be a small gap between your feet and the floor. Ideally, dips should be performed with a straight body but if the gap is relatively small, then you will have to bend your knees.\n\n\u2022 Begin to lower your body by bending your arms whilst leaning slightly forward.\n\n\u2022 To ensure a full range of motion, dip until your shoulders are below your elbows (less than 90 degrees).\n\n\u2022 Next, lean backwards until your forearms and elbows are resting on the bars. Do not swing or use momentum - but rather try to control the movement via your triceps.\n\n\u2022 Push yourself forward, emphasising on the elbow joint, triceps and pectorals until you reach the 90 degree position again.\n\n\u2022 Finally, dip yourself back to the starting position with your arms fully locked out.\n\n\u2022 Perfecting the Russian Dip will condition you well for the Muscle Up."
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/detail_read_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/ic_expand_more_black"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

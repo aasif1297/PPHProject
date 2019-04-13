@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/textView_Monday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="MONDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="5 Muscle Ups ---> 5 Transitional Dips ---> 5 Pull Ups"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_muscleup"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/muscleup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/mon_sbd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/mon_pulls"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="134dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pull_ups"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="3 Muscle Ups"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x6-8 Sets (2-3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_muscleup2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/muscleup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10x 10kg Russian Dips ---> 10x 10kg Dips"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2-3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_russiandips"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/russian_dips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/mon_dips"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="backVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="20 Ring Push Ups"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_ringpushups"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ring_pushups"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="15 Skull Crushers"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_crushers"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skullcrushers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="4 Dragon Flags ---> 25 Back extensions"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_MondayWorkout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/mon_dragonflags"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dragonflags"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/mon_backextenstions"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_extenstions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:contentDescription="armVector"
+                android:src="@drawable/arm_muscle" />
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:contentDescription="backVector"
+                android:src="@drawable/back_muscle" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="94dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/chest_muscle" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="140dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/core_muscle" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_int3wk4_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="#ff0000"
+                android:text="Mark Workout as Complete"
+                android:textColor="#404040"
+                android:textSize="8.5sp"
+                android:textStyle="bold|italic" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="TUESDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="5x 100kg Squats"
+            android:textAlignment="viewStart"
+            android:textColor="#f1faee"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4-5 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#f1faee"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/tues_weightedsquats"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_squats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="15-20x 60kg Squats ---> 10x 40kg Lunges (E/S)"
+            android:textAlignment="viewStart"
+            android:textColor="#f1faee"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#f1faee"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/tues_weightedsquats2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_squats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/tues_weightedlunges"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_lunges"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="20x 20kg Lunges (E/S) ---> 1 min Wall Sit with 20kg"
+            android:textAlignment="viewStart"
+            android:textColor="#f1faee"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#f1faee"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/tues_weightedlunges2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_lunges"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/tues_wallsit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wallsit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="75 Muscle Ups (p) (In the quickest time possible)"
+            android:textAlignment="viewStart"
+            android:textColor="#f1faee"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_TuesdayWorkout06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#f1faee"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/tues_bandedmuscleups"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banded_muscleup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:contentDescription="legVector"
+                android:src="@drawable/legs_muscle" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="54dp"
+                android:contentDescription="legVector"
+                android:src="@drawable/chest_muscle" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:contentDescription="legVector"
+                android:src="@drawable/arm_muscle" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_int3wk4Tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:text="Mark Workout as Complete"
+                android:textColor="#404040"
+                android:buttonTint="#ff0000"
+                android:textSize="8.5sp"
+                android:textStyle="bold|italic" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="WEDNESDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+
+        <TextView
+            android:id="@+id/textView_WednesdayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour3"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Stretching, Mobility, Foam Rolling and Rest."
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/stretchicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stretching"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/foamicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="backVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foam_rolling"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Thursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="THURSDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider25"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Max Muscle Ups"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/thurs_muscleups"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/muscleup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="8x 25kg Pull Ups ---> 12x 25kg Dips"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3-4 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/thurs_weightedpulls"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_pulls"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/thurs_weighteddips"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_dips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10 Ring Pull Ups ---> 10 Ring Dips"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageButton
+                android:id="@+id/thurs_ringpulls"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="backVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ring_pull"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/thurs_ringdips"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="backVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ring_dips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView_ThursdayWorkout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10 Front Lever Raises ---> 10x 40kg Back Extensions"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_ThursWorkout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (2-3 mins rest inbetween sets)"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/thurs_frontleverraises"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lever_raises"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/thurs_backextensions"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_extenstions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:contentDescription="armVector"
+                android:src="@drawable/arm_muscle" />
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:contentDescription="backVector"
+                android:src="@drawable/back_muscle" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="94dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/chest_muscle" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="140dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/core_muscle" />
+
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox_int3wk4_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:text="Mark Workout as Complete"
+                android:textColor="#404040"
+                android:buttonTint="#ff0000"
+                android:textSize="8.5sp"
+                android:textStyle="bold|italic" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="FRIDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider31"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10 Raised Pike Push Ups"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x5 Sets (2 mins rest inbetween sets)"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/fri_raisedpike"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/raised_pikes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="15 seconds L-Sit Hold---> 15 Bar Knee Raises"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (2 mins rest inbetween sets)"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/fri_lsit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/l_sit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fri_barkneeraises"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bar_kneeraises"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10 Windshield Wipers ---> 10 Bar Leg Raises"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/fri_windshield"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/windshield_wipers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fri_barlegraises"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bar_legraises"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour4"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="1 min Plank with 20kg ---> 1 min Hollow Hold with 10kg"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_FridayWorkout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour5"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/fri_plank"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fri_hollowhold"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hollowhold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:contentDescription="armVector"
+                android:src="@drawable/arm_muscle" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/core_muscle" />
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox_int3wk4friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:text="Mark Workout as Complete"
+                android:textColor="#404040"
+                android:buttonTint="#ff0000"
+                android:textSize="8.5sp"
+                android:textStyle="bold|italic" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Saturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="SATURDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider37"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+
+        <TextView
+            android:id="@+id/textView_SatWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="10x 80kg Front Squats ---> 10x 40kg Lunges (E/S)"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_SatWorkout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (3 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sat_frontsquats"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frontsquats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/sat_weightedlunges"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weighted_lunges"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_SatWorkout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="50 Squats ---> 25 Bulgarian Split Squats (E/S)"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_SatWorkout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sat_bulgarian"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bulgarian"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/sat_squats"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_SatWorkout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="25x 10kg Jumping Lunges (E/S)"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_SatWorkout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x3 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sat_jumpinglunges"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jumping_lunges"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_SatWorkout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design_programs_colour1"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="20x 40kg One-Legged Calf Raises ---> 20x 20kg One-Legged Calf Raises"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_SatWorkout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour2"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="x4 Sets (2 mins rest inbetween sets) "
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sat_onelegcalfraises"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/oneleg_calfraise"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp">
+
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:contentDescription="chestVector"
+                android:src="@drawable/legs_muscle" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_int3wk4_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:text="Mark Workout as Complete"
+                android:textColor="#404040"
+                android:buttonTint="#ff0000"
+                android:textSize="8.5sp"
+                android:textStyle="bold|italic" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_Sunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="SUNDAY"
+                android:textAlignment="center"
+                android:textColor="#005580"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/divider39"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#ff0000" />
+
+        <TextView
+            android:id="@+id/textView_SundayWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/button_design_programs_colour3"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:text="Stretching, Mobility, Foam Rolling and Rest."
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/stretchicon2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="armVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stretching"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/foamicon2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:contentDescription="backVector"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foam_rolling"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView_End_BegLevel1Week1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="30.5dp"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="25dp"
+            android:text="End of Intermediate Program Level 3 - Week 4"
+            android:textAlignment="center"
+            android:textColor="#b32400"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/rate_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="serif-monospace"
+            android:text="RATE YOUR PERFORMANCE"
+            android:textAlignment="center"
+            android:textColor="#002db3"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_i3w4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1"
+            android:progressTint="#ffdd1a"/>
+
+        <TextView
+            android:id="@+id/textView_statement_BegLevel4Week1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:fontFamily="@font/antic_didone"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:text="No requirements to repeat this week's workout."
+            android:textAlignment="center"
+            android:layout_marginTop="7.5dp"
+            android:textColor="#000080"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Triphala">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="TRIPHALA"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/triphala"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Emblica officinalis, Terminalia bellirica, Terminalia chebula"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: 'Three Fruits' Powder"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:layout_marginTop="25dp"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="Triphala is an Ayurvedic formula made with equal parts of Amalaki (sometimes called Amla or Indian Gooseberry), Bibhitaki (sometimes called Beleric) and Haritaki (sometimes called Black Myrobalan ). Triphala is a Sanskrit word which literally means 'three fruits'.\n\nTriphala contains a number of antioxidants that perform protective functions in the body. It contains vitamin C, flavonoids, polyphenols, tannins and saponins, along with other potent plant compounds. These compounds help fight oxidative stress caused by free radicals, which are molecules that can damage cells and contribute to chronic disease.\n\nTriphala has been shown to protect against certain cancers in a number of test-tube and animal studies. For example, it has been shown to inhibit the growth of lymphoma, as well as stomach and pancreatic cancers in mice. This herbal remedy also induced colon and prostate cancer cell death in test-tube studies.\n\nTriphala may benefit dental health in several ways. Triphala has antimicrobial and anti-inflammatory properties that can help prevent plaque formation, a common cause of cavities and gingivitis (gum inflammation). One study in 143 children found that rinsing with a mouthwash containing Triphala extract reduced plaque buildup, gum inflammation and bacterial growth in the mouth."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+    </LinearLayout>
+
+</ScrollView>

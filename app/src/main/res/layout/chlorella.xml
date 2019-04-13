@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Chlorella">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Chlorella"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/chlorella"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Chlorella vulgaris"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Blue green algae"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_chlorella"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_chlorella"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Known as the “Jewel of the East”, chlorella is a genus of single cell freshwater green algae which is comprised of organisms that have survived as a life form for billions of years. It has survived because its tough outer shell has protected its genetic integrity as fossil remains have demonstrated. It is one of the most efficient foods on earth in using and concentrating sunshine as is shown by its high chlorophyll content and rapid reproduction rate known as the “Chlorella Growth Factor” or CGF.\n\nChlorella has an astounding macro and micro nutrient profile containing a plethora of essential vitamins and minerals. It contains around 50% complete protein with around 70% net protein utilisation/digestibility. This supergreen algae has been gaining notoriety as a heavyweight in the world of detox – especially heavy metal detox. One of chlorella’s most significant health benefits is that it wraps itself around even the most stubborn toxins in the body such as cadmium, lead, mercury and uranium and safely eliminates them, it is the fibrous material in chlorella that has been shown to bind with heavy metals and pesticides. When purchasing chlorella it is important to look for 'cracked wall' chlorella - this is bioavailable and easily absorbed by our bodies.\n\nOther scientifically supported health benefits include; boosting your immune system, improving antioxidant status, improving glucose uptake into cells, reducing blood pressure, improving insulin resistance, preventing gastric ulcers, reducing fibromyalgia pain and protecting against radiation poisoning."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+    </LinearLayout>
+
+</ScrollView>

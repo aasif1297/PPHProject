@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Wheat_Grass">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Wheat Grass"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wheatgrass"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Triticum aestivum"
+            android:textStyle="bold" />
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_wheatgrass"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_wheatgrass"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+               android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="Wheatgrass was famously used in Traditional Chinese Medicine primarily to reverse grey hair back to its normal colour. Whilst this might seem outlandish, the premise in TCM is that hair pigmentation is influenced by the quality of blood and the strength of the kidneys - if hair has gone grey, the kidneys and blood need to be strengthened. Foods that accomplish this include Wheatgrass and, indeed, any other foods with a high chlorophyll content. A surprising fact about chlorophyll is that its molecular structure is almost identical to that of haemoglobin, a critical part of human blood.  The only difference is their central atom which is iron for haemoglobin and magnesium for chlorophyll – in the body it performs the same function as haemoglobin, which is to oxygenate the blood.\n\nYour body needs enzymes to break down food into compounds that are easily absorbed. Wheatgrass contains a unique trinity of digestive enzymes – Amylase, Protease and Lipase. Amylase reduces carbohydrates into simple sugars that are utilised as energy, especially by the brain. Protease metabolises proteins into amino acids which are then used by the body as building blocks to make muscles, tendons, organs and skin. Finally, Lipase metabolises fats into fatty acids – saturated, polyunsaturated and monounsaturated. Whilst this enzyme is also produced in the intestines and gall bladder, the extra lipase from Wheatgrass can boost fat metabolism which can lead to weight loss.\n\nOur body’s pH is now known to be of paramount importance, with countless studies pointing to the fact that disease struggles to take hold and thrive in an alkaline environment. Wheatgrass is highly alkalising (as are many leafy green vegetables), but what makes Wheatgrass stand out head and shoulders above the rest is the amount of alkaline minerals it contains (calcium, magnesium, manganese, and potassium to name but a few)."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

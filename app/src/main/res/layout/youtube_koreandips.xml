@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Youtube_Korean_Dips">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="KOREAN DIPS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/korean_dips"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_intermediate_exercises"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="INTERMEDIATE"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/koreandips_youtubePlay"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_play_koreandips"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/youtube_logo_new"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+            android:background="#cc2900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:text="Video Credit: JustCalisthenics (How to Korean dips? | Korean dips tutorial)"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Muscles Worked:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arm_muscle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView2"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/chest_muscle"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/trirong_light"
+                android:background="@drawable/button_design_musclesworked"
+                android:text="prerequisites:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="15x Skull Crushers, 20x Straight Bar Dips, 10x Russian Dips"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Equipment Required:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="Access to a Straight/Parallel Bar, at roughly chest height"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Technique focal points"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="\u2022 First off, position yourself so that you're almost sitting on the edge of the straight bar and you're facing away from it.\n\n\u2022 Turn your hands out so that you're gripping the bar with your palms facing forward. Keep them close to your body and not widely spread.\n\n\u2022 Next, slowly slide your hips off the bar, keeping your feet behind you. Grip the tight in order not to face plant!\n\n\u2022 Pause briefly at the bottom of the rep to make sure you are stable and ready to push up. Your elbows should almost be pointing upwards.\n\n\u2022 With your hands firmly gripping the bar, begin to lift your body up maintaining the curved posture, in order for your back to go around the bar.\n\n\u2022 Repeat as necessary. Do not swing to achieve the full range of motion."
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/detail_read_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/ic_expand_more_black"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

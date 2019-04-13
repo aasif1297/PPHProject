@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Hemp_Powder">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="HEMP POWDER"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hempseeds_vegan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Cannabis Sativa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also Known as: Hoenep, Hennep, Chanvre, Hanf, Hampu, Kender, Konopi, Banga, Cañamo, Canapa, Cây Gai, Kalamu, Rami &amp; Qanneb."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopupNutrition"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hemptext"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:fontFamily="@font/brawler"
+            android:text="Hemp was first brought to Britain by the Romans 2000 years ago and growing it became commonplace, continuing into the mid-1940s. In 1533, Henry VIII made hemp cultivation the law of the land, for every 60 acres, farmers had to set aside one rood (about 1/4 acre) for flax or hemp. He mandated hemp cultivation in order to make more rope, sails, nets and other naval equipment. America's World War II slogan was 'Hemp for Victory' which encouraged farmers to help the war effort by sowing crops of hemp.\n\nHemp seeds contain essential fatty acids in the ideal ratio to meet human nutritional needs, with a perfect balance of Omega 6 to Omega 3. Fatty acids make up the cell membrane and have an intimate role in hormonal responses throughout the body. The ideal ratio of Omega 6 to Omega 3 is between 1:1 to 4:1, the hemp seed ratio is 4:1 and it is this ratio that is critical to cellular health and systemic inflammatory levels. They also contain gamma linolenic acid (GLA), a powerful anti-inflammatory which converts into beneficial prostaglandins - lipid compounds that have a profound reduction on the impact of inflammation in cardiovascular disease, lung function, autoimmune conditions and metabolic abnormalities.\n\nIn addition to the immuno supportive nutrients it contains, hemp is the premier plant-seed provider of globulin starting material — the precursor to immunoglobulins. These compounds are responsible for both the natural and acquired immunity that a person has to fight off foreign microbes. Eating hemp seeds will ensure the immune system has the reservoir of immunoglobulin resources needed to make disease-eradicating antibodies."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

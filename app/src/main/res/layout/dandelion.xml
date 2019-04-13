@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Dandelion">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="DANDELION LEAF"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dandelion"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Taraxacum officinale"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: pise-en-lit, pee-the-bed, lion's tooth, fairy clock, blowball, cankerwort, priest's crown, puffball, swine snout, white endive, wild endive."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="4"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/hemptext"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Dandelion was first mentioned in Chinese herbals as late as the 7th century, it was used by the Arabian physicians of the 10th and 11th centuries and in Europe it first appears in the Ortus Sanitatis of 1485. Dandelion's common name was apparently invented by a 15th century surgeon, who compared the shape of the leaves to a lion's tooth, or dens lionis.\n\nThe Dandelion herb is especially indicated in detoxification of the liver, restoring hydration along with electrolyte balance. Dandelion root contains a bitter compound, 'taraxacerin' that increases the level of bile secreted by the gallbladder, helping the liver to detoxify more efficiently. It is also diuretic, aiding the liver and kidneys to flush away excess water and waste, supporting the body as it eliminates harmful toxins.\n\nA well known diuretic, Dandelion assists the kidneys in clearing out waste, salt and excess water by increasing urine production. This inhibits microbial growth in the urinary system and replaces some of the potassium lost in the process too.\n\nDandelion supports the detoxification and cleansing of the digestive tract, especially from the effects of overconsumption of fatty foods, coffee and prescription medicines. It can be effectively combined with Milk Thistle – another digestive and liver supportive herb – to gently move toxins from the body."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Pumpkin_Seed_Powder">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="PUMPKIN SEED POWDER"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pumpkinseeds"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Cucurbita Pepo"
+            android:textStyle="bold" />
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_pumpkinseeds"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_pumpkinseeds"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="The round, plump, orange vegetable that we know as the pumpkin today is actually descended from a much smaller, hooked neck and rather non-descript gourd. Archaeological excavations in Mexico, Central and South America and the Eastern United States have revealed that the ancient peoples of the Americas only ate the seeds and didn’t bother with the flesh of the gourd - possibly due to the bitter taste. Later, as Native American tribes started to select and breed the pumpkin/gourd for a sweeter taste, they started to consume the flesh and even the flowers of the gourds. Traditionally the flesh would be roasted into strips and then dried to be used as a winter food. Even the outer casing would be dried and used as water vessels and bowls.\n\nPumpkin seeds are one of the best natural sources of the heart healthy mineral magnesium. The heart has the highest magnesium requirement of any other organ and is simply unable to function properly with insufficient amounts of this important mineral. High blood pressure, cardiac arrest and cardiovascular disease are all potential side effects of insufficient magnesium.\n\nAnother mineral that contributes to heart health is potassium which, with vasodilating properties relieves the tension in blood vessels which is one of the main causes of high blood pressure. The oil of the pumpkin seed also contains nitric oxide enzymes which help to expand blood vessels, improving blood flow and reducing the risk of atherosclerosis (the build up of plaque leading to hardening of the arteries).\n\nThese super seeds are also high in the antioxidant minerals copper, manganese and selenium. Manganese in particular is a powerful antioxidant, a component of the enzyme superoxide dismutase, this is the body’s most powerful antioxidant that plays a critical role in reducing oxidative damage and inflammation.\n\nPumpkin seeds are a great source of valuable plant based omega 3 – alpha linolenic acid (ALA). This is the precursor to the more important EPA and DHA – critical omegas that the body cannot do without. If we rely on plant based omega 3, it is important that our bodies can convert ALA into these important fats. Conversions of ALA to DHA and EPA are dependent on adequate levels of other nutrients, such as B vitamins, copper, calcium, magnesium, zinc, and iron – most of which are abundant in pumpkin seeds."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Chamomile">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="CHAMOMILE"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/chamomile"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Chamomilla recutita"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Ground Apple, Whig Plant, Perennial Chamomile, Sailors Buttons, Double Chamomile, pin heads."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:fontFamily="@font/brawler"
+            android:text="Chamomile has enjoyed a rich history as a spiritual and medicinal herb. Records of its use date back to the ancient Romans, Greeks and Egyptians who believed the flowers contained both magical and healing properties. Considered the herb of the sun, drinking chamomile tea was thought to restore vital energy sources, instil positive energy and bring prophetic dreams. It was dedicated to the sun god RA by the Ancient Egyptians whilst some Germanic tribes dedicated it to their sun god Baldur.\n\nAs its many names allude to, chamomile is the King of the Herbs when it comes to any kind of digestive complaint. Known as “Our Lady of the Guts” or “Mother of the Gut”, this versatile herb contains a complex collage of phytochemicals that work individually and collectively on all aspects of the digestive system. A-bisabolol speeds the mending of torn tissue which assists the healing of ulcerations. Chamazulene shrinks swollen stomach tissue that presses on nerve endings causing pain. Azulene kills staphylococcus and streptococcus infections, which in turn can alleviate the symptoms of food poisoning.\n\nAs a relaxant, chamomile depresses the central nervous system, reducing anxiety while not disrupting normal performance or function. This is due to the active principles of chamomile including flavonoids, glycosides, and essential oils.\n\nSometimes called “herbal aspirin”, chamomile has been used for centuries to lower pain and reduce inflammation. This seems to be backed up by science, with a 2009 study by Srivastava et al published in 'Life Sciences', finding that chamomile caused cell reactions similar to that of nonsteroidal anti-inflammatory drugs. It is a popular remedy for inflammation on the outside of the body too, with it being commonly used to treat sunburn, mild burns, rashes, sores and eye inflammation."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Hibiscus">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Hibiscus Tea"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hibicus_tea"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Hibiscus sabdariffa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Ambashthaki, Bissap, Gongura, Groseille de Guinée, Guinea Sorrel, Hibisco, Hibiscus Calyx, Hibiscus sabdariffa, Jamaica Sorrel, Karkade, Karkadé, Oseille de Guinée, Oseille Rouge, Pulicha Keerai, Red Sorrel, Red Tea, Rosa de Jamaica, Roselle, Sour Tea, Su."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="There seems to be a correlation throughout the world with the Hibiscus flower and feminine energy. In Hawaii/Polynesia if the woman wears a Hibiscus flower over her left ear then it means that she is in a relationship while wearing the flower over the right ear means that she is available or open to a relationship. In India the Hibiscus Flower is traditionally used as an offering to goddesses and traditional Southern Indian iconography of the Goddess Kali features Hibiscus flowers heavily. A variation in Greek mythology shows Hibiscus being a potent symbol of beauty where the god Adonis is transformed into a Hibiscus flower and then fought over by the goddesses Aphrodite and Persephone.\n\nSeveral studies have found that Hibiscus flowers have high vitamin C as well as possessing chemicals that lower blood pressure. In blind tests hibiscus flower tea worked just as well as prescription drugs in about 4 weeks for those with moderate to high blood pressure. The fruit acids present in the Hibiscus flower have proven to be a mild laxative decreasing spams in the stomach whilst also having an antibiotic action that helps rid the intestine of worms and foreign bacteria. Other tests have revealed that Hibiscus could have the ability to reduce the absorption of alcohol and help with alcohol poisoning."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

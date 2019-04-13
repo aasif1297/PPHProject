@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Liqurice">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Liquorice Root"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/liq_root"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Glycyrrhiza glabra"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Yashtimadhu, Mithi-lakdi, Mulathi, sweetwood, licorice root Atimadhuram, Erattimadhuram"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Liquorice root was used in many areas of the ancient world, including the Brahmans of India, the Hindus, Greeks, Romans, Babylonians and Chinese. The ancient Hindus believed it would increase sexual vigor when prepared as a beverage with milk and sugar. The Scythians taught the use of the herb to the Greeks; Theophrastus called it Scythian root, writing in the third century B.C. The Scythians were able to go twelve days without drinking water because they chewed on Liquorice root and ate mare’s cheese. He also said it was good for coughs and all pectoral diseases. In about 80 AD, Pliny recommended Liquorice root to clear the voice and to alleviate thirst and hunger.\n\nLiquorice root is a natural antacid that helps to relieve heartburn, indigestion, gastric and stomach ulcers, acid reflux and symptoms of GERD (Gastroesophageal Reflux Disease). It works by coating the digestive tract with mucous, protecting the stomach lining whilst speeding up its repair and restoring balance. One of the major components of Liquorice is “glycyrrhizic acid”, a powerful anti-inflammatory that has been found to suppress the growth of the toxic bacteria “H pylori” – a nasty little bug that can lead to a whole host of stomach problems.\n\nLiquorice can increase the production of healthy mucous within the bronchial system. Whilst this may appear counterintuitive to a cough or a cold, the production of healthy phlegm actually keeps the respiratory system functioning well and prevents the old, sticky mucous from clogging up the respiratory tracts.\n\nLiquorice both protects the liver and promotes healing in this vital organ. The herb's anti-inflammatory properties help calm hepatitis-associated liver inflammation. Liquorice also fights the virus commonly responsible for hepatitis and supplies valuable antioxidant compounds that help maintain the overall health of the liver. Numerous studies have found that the active compound in Liquorice can effectively block liver damage caused by alcohol and over the counter pain killers. The glycyrrhizin found in this root is a potent free radical scavenger, especially in the liver."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

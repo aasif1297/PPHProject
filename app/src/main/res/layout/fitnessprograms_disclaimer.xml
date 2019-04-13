@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.londonsoftware.calisthenics.calisthenics.Fitnessprograms_Disclaimer"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:titleTextColor="#ffffff"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="IMPORTANT INFORMATION"
+            app:titleTextAppearance="@style/TabToolbar.TitleText">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/textView_ImportantInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/antic_didone"
+            android:text="WORKOUT ESSENTIALS"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginTop="4.5dp"
+            android:background="#990000" />
+
+        <TextView
+            android:id="@+id/textView_Equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="EQUIPMENT REQUIRED:"
+            android:textAlignment="viewStart"
+            android:textColor="#000066"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Equipment22xx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="Red Resistance Band (Width = 1.3cm)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/redband"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_Equipment22xx"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Equipment22xx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="Black Resistance Band (Width = 2.2cm)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/blackband"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_Equipment22xx3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_Equipment22xx32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="Purple Resistance Band (Width = 3.2cm)"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/purpleband"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_Equipment22xx32"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView_Equipment22xx332"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/antic_didone"
+                android:padding="5dp"
+                android:text="Green Resistance Band (Width = 4.5cm)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/greenband"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_Equipment22xx332"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView_Equipment22xx3d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="Others: Rings, Weight Belt"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#595959" />
+
+        <TextView
+            android:id="@+id/textView_Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="NOTE:"
+            android:textAlignment="viewStart"
+            android:textColor="#000066"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Nowte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="If you break the set, then take 10-20 secs rest and carry on. Always maintain form over quantity."
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#595959" />
+
+
+        <TextView
+            android:id="@+id/textView_abbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="ABBREVIATIONS:"
+            android:textAlignment="viewStart"
+            android:textColor="#000066"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_abb3r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'E/S' = Each Side"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_abb33r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'r' = Red Band"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_abbe33r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'b' = Black Band"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_abbe313r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'p' = Purple Band"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_abbe313rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'g' = Green Band"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_abbe313drd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="'10.10.10. Isometric hold' = 10 seconds chin over bar, 10 seconds head under bar, 10 seconds deadhang"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#003311" />
+
+        <TextView
+            android:id="@+id/textView_abbr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="Aim to spend at least 15 minutes to Warm-Up + Stretch before the workout and 15 minutes to Cool Down + Stretch after the workout."
+            android:textAlignment="viewStart"
+            android:textColor="#001f4d"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textView_ImportantInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/antic_didone"
+            android:text="DISCLAIMER"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/divider222"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginTop="4.5dp"
+            android:background="#ff0000" />
+
+
+        <TextView
+            android:id="@+id/textView_Equipment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="There are many different calisthenics exercises and styles of training that one can adopt to improve their technical ability in the sport. The Fitness Programs is an example guide, that can be adjusted and built upon over time as your experience grows."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_Equipment22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="17dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="For weighted exercises, you should  (if necessary) lower or increase the weight accordingly and always be mindful of potential injuries when choosing heavier loads."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView_Equipment22ww2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/antic_didone"
+            android:padding="5dp"
+            android:text="We do not take responsibility for any injuries you may sustain during your training whilst using this application."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+

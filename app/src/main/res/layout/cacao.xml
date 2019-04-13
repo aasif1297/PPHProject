@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Cacao">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Raw Cacao"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cacaopowder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:textSize="12sp"
+            android:text="Latin Name: Theobroma Cacao"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also Known as: Kakaw"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_cacao"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_cacao"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="The Maya believed that the kakaw (cacao) was discovered by the gods in a mountain that also contained other delectable foods to be used by the Maya. According to Maya mythology, the Plumed Serpent gave cacao to the Maya after humans were created from maize by the divine grandmother goddess Xmucane. The Maya celebrated an annual festival in April to honour their cacao God Ek Chuah. In a similar creation story, the Mexican (Aztec) god Quetzalcoatl discovered cacao (cacahuatl: 'bitter water'), in a mountain filled with other plant foods. Cacao was offered regularly to a pantheon of Aztec deities and the Madrid Codex depicts priests lancing their ear lobes (autosacrifice) and covering the cacao with blood as a suitable sacrifice to the gods.\n\nThe Aztecs gave Cacao the name 'yollotl eztli', meaning 'heart blood', indicating that they may have understood, even then, the heart-benefiting aspects of Cacao. Cacao is the highest wholefood source of the mineral magnesium – an extremely important mineral that is sadly lacking in modern diets. It helps to regulate heart rhythm, co-ordinating the activity of the heart muscle and the nerves that initiate heartbeat. Low magnesium levels can cause heart palpitations and arrhythmias (irregular heartbeats).\n\nOrganic, untreated or Raw Cacao is an unbeatable mood enhancer due to the abundance of feel good phytonutrients it contains. Theobromine exerts a positive influence on mood and the presence of the neurochemical 'phenylethylamine' enhances feelings of contentment. Cacao also contains the recently discovered messenger molecule, 'anandamide' - also known as the 'bliss molecule' and named for the Sanskrit word for bliss and joy. The combination of mood boosting vitamins, minerals and phytonutrients in Cacao is able to trigger the production of serotonin and dopamine in the brain. Not only that, Cacao is one of the highest known sources of the miracle mineral magnesium, with symptoms of magnesium deficiency manifesting as depression, irritability and anxiety - all reversible with magnesium repletion."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

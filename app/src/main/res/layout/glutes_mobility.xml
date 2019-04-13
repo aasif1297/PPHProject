@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.glutes_mobility">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="GLUTE STRETCHES"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="50dp">
+
+            <ImageView
+                android:id="@+id/bicep_mob_image"
+                android:layout_width="90dp"
+                android:layout_height="187dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/glutes_trimmed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/latsmoreinfo_anatomy"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="anatomyinfo_glutes"
+                android:background="@drawable/button_design_exercises2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="ANATOMY"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/latsmoreinfo_stretches" />
+
+            <Button
+                android:id="@+id/latsmoreinfo_stretches"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="stretchinfo_glutes"
+                android:background="@drawable/button_design_musclesworked2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="stretching"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/latsmoreinfo_extravideos"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="extravideos_glutes"
+                android:background="@drawable/button_design_advanced_exercises2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="EXTRA VIDEOS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/latsmoreinfo_anatomy" />
+
+            <TextView
+                android:id="@+id/biceptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="The gluteus maximus is the largest of the three glute muscles. It attaches to the side of the sacrum and thighbone, or femur, and draws the femur into the hip socket."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bicep_mob_image" />
+
+
+            <TextView
+                android:id="@+id/biceptext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="Glute max also works to kick your leg behind you and in external rotation, in addition to supporting upright, standing postures. If the gluteus maximus is weak, muscles along the lower spine, in addition to the hamstrings, will often overcompensate, potentially causing back tension and spinal misalignment."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/biceptext" />
+
+
+            <TextView
+                android:id="@+id/biceptext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/button_design_videoshownbelow"
+                android:fontFamily="@font/trirong_light"
+                android:padding="5dp"
+                android:text="Example glute stretches are shown in the video below:"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/biceptext2" />
+
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/glutemobility_youtubePlay"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/biceptext3"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_play_glutemobility"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/youtube_logo_new"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:text="Video Credit: Upright Health (Glute stretch: how to relax a tight butt/hip)"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_play_glutemobility"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!-- For setting website links from txtviews
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linktowiki" />
+        -->
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

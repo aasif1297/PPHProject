@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Pau">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Pau D'Arco"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/paudarco"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Tabebuia avellanedae"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Taheebo, Ipe roxo, Lapacho."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Pau d'arco has a long and well-documented history of use by the indigenous peoples of the rainforest. Use of Pau D'Arco may actually pre-date the Inca Empire. Tribes living thousands of miles apart have used Pau D'Arco for the same medicinal purposes for hundreds of years. Guarani and Tupi Indians call the Pau D'Arco tree tajy, which means 'to have strength and vigor'. The bark is used to treat many different conditions and as a tonic. The Inca are attributed with dubbing this tree as divine. Many plants have been credited with godlike status but, it is said that pau d'arco attracts alpha rays, which give human cells a positive electrical charge.\n\nCandida is a common yeast which lives in the mouth and the intestines. It is needed in very small amounts to aid digestion and nutrient absorption. However, if the body’s Ph level is upset it can get out of control very quickly, resulting in Candida overgrowth – also known as Candidiasis. Powerfully antifungal, Pau d’arco is most well known for its Candida fighting abilities. It contains several classes of compounds; lapachol, xyloidone and other napthaquinones – the most important of these being lapachol. In an overview of lapachol research published in 2007, it was found that lapachol has a significant effect against Candida albicans and Candida tropicalis. Pau d’arco will also loosen the bowels – not enough to cause diarrhoea – but enough to wash out old faecal matter, exposing the Candida yeast. In this way, Pau d’arco offers a two-pronged attack against Candida overgrowth.\n\nPau d’arco contains some powerful antioxidant compounds including; quercetin, flavonoids and carnosol. Quercetin in particular is a prolific free radical scavenger, helping to slow down the aging process and lessening the effects of oxidative stress. It also stimulates the digestive system to keep food moving through the body – especially the colon, which can be likened to the sewage tank of the body – needing to be cleaned, emptied and maintained to function properly. This allows any unhealthy debris, excess fats and toxins to be eliminated regularly, keeping the colon clean and healthy."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

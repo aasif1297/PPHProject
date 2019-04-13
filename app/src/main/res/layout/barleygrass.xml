@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Barley_Grass">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Barley Grass"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/barleygrass"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Hordeum vulgare L"
+            android:textStyle="bold" />
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_barleygrass"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="179dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:onClick="ShowPopupNutrition_barleygrass"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:text="Nutrients &amp; Minerals"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:id="@+id/hemptext"
+            android:maxLines="4"
+            android:text="Barley in it's fully grown grain form has served as a staple food source in many different cultures. The use of barley for food and medicinal purposes dates back thousands of years. Roman gladiators ate barley for strength and stamina. In the West the plant first came into popular use because of the barley grain it produces, and more recently it has begun being recognized for it's superior nutrional value in grass form.\n\nBarley Grass is a natural source of organic sodium which is needed by the lining of the stomach to produce hydrochloric acid (without which our food cannot be digested). Also rich in digestive enzymes, these substances can help to reduce toxic and indigestible materials in food. This tender young grass is also extremely high in chlorophyll, a natural cleanser to the body which will help to counter the effects of eating processed foods and give an overall energy boost.\n\nExtremely alkalising and rich in essential vitamins and minerals, Barly Grass is an abundant source of chlorophyll - a compound that converts sunlight into energy within the plant. When chlorophyll is consumed it releases a flow of oxygen into the bloodstream, detoxing the body of harmful toxins and impurities, it has the ability to bind to and flush out toxic chemicals and heavy metals. Barley Grass offers protection from radiation and cellular damage, regenerating damaged cells and tissues. It is such a powerful cleanser that it is recommended to start slowly to avoid detox symptoms such as headaches, rashes and nausea. This is normal and is generally triggered by the release of toxins from the cells and tissue, however should these symptoms persist it is advised you contact your health care professional.\n\nBarley Grass is naturally high in many key nutrients that help to support the immune system, such as vitamins, minerals, amino acids, antioxidants and enzymes. It is extremely high in vitamin C which is crucial to the overall health of the body in its efforts to fight off infections – both bacterial and viral. White blood cells contain 20 times the amount of vitamin C than other cells and require constant replenishment to keep the immune system working to its optimum capacity. Alongside other immune supporting vitamins and minerals, Barley Grass is high in the amino acid “arginine”. This is especially effective in helping the body heal from burns, injuries and wounds."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+    </LinearLayout>
+
+</ScrollView>

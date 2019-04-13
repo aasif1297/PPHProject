@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Velarian">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Valerian Root"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/valerian"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Valeriana officinalis"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Garden valerian, garden heliotrope."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Valerian has been used as a medicinal herb since at least the time of ancient Greece and Rome. Hippocrates described its properties, and Galen later prescribed it as a remedy for insomnia. The Native Americans used it in healing wounds and ulcers, as well as a cough remedy.\n\nThe most popular use of this versatile herb is, without doubt, as a sleep aid. Gamma-aminobutyric acid (GABA) is a neurotransmitter that sends chemical messages through the brain and nervous system. Its role is to inhibit or reduce the activity of neurons or nerve cells. In large enough quantities GABA can cause a sedative effect – Valerian root  has been shown to increase GABA levels in the brain which can in turn not only reduce the amount of time taken to fall asleep, it can also improve the quality of sleep too.\n\nThe aforementioned GABA also helps to calm anxiety with its regulation of nerve cells. The valerenic acid and valerenol contained in the Valerian root act as anti-anxiety agents, stabilising the central nervous system. The improved GABA levels make it easier for the mind and body to relax, meaning Valerian root can also help to keep your stress levels down – significantly helping with daily stress management.\n\nNaturally sedative and antispasmodic, Valerian root acts as a powerful muscle relaxant and can be especially helpful in easing menstrual cramps. It can effectively calm the severe uterine muscle contractions experienced by some women during menstruation. This was validated by a double-blind, randomised placebo controlled study from the Islamic Azad University in Iran."
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

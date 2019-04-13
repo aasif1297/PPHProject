@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Dips_Exercise">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="DIPS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/normal_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/dips" />
+
+            <TextView
+                android:id="@+id/pullup_normal_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Normal Dips (Parallel)"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/normal_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.30" />
+
+            <ImageButton
+                android:id="@+id/sb_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/sbdips_new_exercise" />
+
+            <TextView
+                android:id="@+id/chinup_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Bench Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/pull_closegrip_textview"
+                app:layout_constraintStart_toEndOf="@id/pullup_normal_textview"
+                app:layout_constraintTop_toBottomOf="@+id/benchdips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/benchdips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sb_dips_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/normal_dips_imagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/benchdips_newexercise" />
+
+            <TextView
+                android:id="@+id/pull_closegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Straight Bar Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sb_dips_imagebutton"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30" />
+
+
+            <ImageButton
+                android:id="@+id/slow_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/impossible_dips_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/russian_dips_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/chinup_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/dips_new_exercise" />
+
+            <TextView
+                android:id="@+id/pull_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Slow Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/chin_widegrip_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintTop_toBottomOf="@+id/slow_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/russian_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pullup_normal_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/russian_dips" />
+
+            <TextView
+                android:id="@+id/chin_closegrip_textview2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Russian Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/russian_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/impossible_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pull_closegrip_textview"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/impossible_dips" />
+
+            <TextView
+                android:id="@+id/chin_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Impossible Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/impossible_dips_imagebutton"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/trans_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/trans_dips" />
+
+            <TextView
+                android:id="@+id/bandpulls_textview3"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Transitional Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trans_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/korean_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/weighted_dips_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/trans_dips_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/pull_widegrip_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/korean_dips" />
+
+            <TextView
+                android:id="@+id/deadhang_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Korean Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/negative_textview"
+                app:layout_constraintStart_toEndOf="@+id/bandpulls_textview3"
+                app:layout_constraintTop_toBottomOf="@+id/korean_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+
+            <ImageButton
+                android:id="@+id/ring_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bandpulls_textview3"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/ring_dips" />
+
+            <TextView
+                android:id="@+id/austa_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Ring Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ring_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/weighted_dips_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_widegrip_textview"
+                app:layout_constraintVertical_bias="0.005"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/weighted_dips_cardview" />
+
+            <TextView
+                android:id="@+id/negative_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Weighted Dips"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weighted_dips_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

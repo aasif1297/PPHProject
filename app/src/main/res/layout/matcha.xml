@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Matcha">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Matcha"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/matchagreen_tea"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Camellia sinensis"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="The origins of matcha can be traced all the way back to the Tang Dynasty in China. The Tang Dynasty spanned the 7th – 10th centuries. During this time, the Tang Dynasty steamed tea leaves to form into bricks, making their tea harvests easier to transport and subsequently trade. These tea bricks were prepared by roasting and pulverizing the leaves then mixing the resulting tea powder with water and salt.\n\nMatcha green tea benefits include a generous dose of L-Theanine, which is responsible for producing dopamine and serotonin, two chemicals that naturally improve your mood, enhance your memory, and even make it easier to concentrate on essential tasks. L-Theanine in green tea can also stimulate alpha brain waves, which are known for slowing down your brain functioning in ways that increase your focus and concentration.\n\nMatcha is filled with catechins, which are the most beneficial and most potent antioxidants available. One type of catechin, called the epigallocatechin gallate (EGCG), comprises 60% of the catechins found in matcha green tea and is renowned for its cancer-fighting properties. In fact, matcha has more than 100 times the EGCG level of other tea varieties.\n\nSamurai soldiers once relied on a cup of matcha before they entered battle in Medieval Japan to calm their nerves, and you can get those same matcha green tea benefits today. All green tea contains caffeine, but matcha caffeine is released in your body in a slower, more stable way, allowing you to experience an increase in alertness and physical stamina for up to six hours after you drink it."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

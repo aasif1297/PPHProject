@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">#008ae6</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+
+
+    <!-- This controls the appearance of the toolbar title (The Cali Blueprint) features -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- This controls the appearance of the tab toolbar title features -->
+    <style name="TabToolbar.TitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="TabToolbar_Blog_Timeline.TitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    //competitions tab bar text size and all caps (reps n sets)
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    //competitions tab bar text size and all caps (reps n sets)
+    <style name="MyTabLayoutTextAppearance_programs" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+
+    //Toast for competition fragment, 'Coming Soon'
+    <style name="mytoast">
+        <item name="colorBackground">#669999</item>
+        <item name="strokeColor">#527a7a</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="mytoast2">
+        <item name="colorBackground">#991f00</item>
+        <item name="strokeColor">#cc2900</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="textSize">14sp</item>
+    </style>
+
+    <style name="mytoast3">
+        <item name="colorBackground">#0099ff</item>
+        <item name="strokeColor">#008ae6</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="textSize">14sp</item>
+    </style>
+
+
+
+    <style name="AppTheme_menu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+
+        <!-- Here you go. This changes overflow icon colour. -->
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

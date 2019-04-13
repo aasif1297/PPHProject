@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Herbal_Teas">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="HERBAL TEAS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/peppermint_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/peppermint" />
+
+            <TextView
+                android:id="@+id/peppermint_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Peppermint"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/peppermint_imagebutton"
+                app:layout_constraintWidth_percent="0.30" />
+
+            <ImageButton
+                android:id="@+id/dandelion_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/dandelion" />
+
+            <TextView
+                android:id="@+id/damiana_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Damiana Leaf"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/dandelion_textview"
+                app:layout_constraintStart_toEndOf="@+id/peppermint_textview"
+                app:layout_constraintTop_toBottomOf="@+id/damiana_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/damiana_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dandelion_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/peppermint_imagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/damiana" />
+
+            <TextView
+                android:id="@+id/dandelion_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Dandelion Leaf"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dandelion_imagebutton"
+                app:layout_constraintWidth_percent="0.30" />
+
+
+            <ImageButton
+                android:id="@+id/elderberry_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/valerian_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/chamomile_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/damiana_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/elderberry" />
+
+            <TextView
+                android:id="@+id/elderberry_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Elderberry"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/valerian_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/chamomile_textview2"
+                app:layout_constraintTop_toBottomOf="@+id/elderberry_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/chamomile_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/peppermint_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/chamomile" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/chamomile_textview2"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Chamomile"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chamomile_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/valerian_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dandelion_textview"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/valerian" />
+
+            <TextView
+                android:id="@+id/valerian_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Valerian Root"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/valerian_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/lemonver_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chamomile_textview2"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/lemon_verbana" />
+
+            <TextView
+                android:id="@+id/lemonver_textview3"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Lemon Verbena"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lemonver_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/liqu_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/matcha_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/lemonver_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/elderberry_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/liqurice_root" />
+
+            <TextView
+                android:id="@+id/liqu_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Liquorice Root"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/matcha_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/lemonver_textview3"
+                app:layout_constraintTop_toBottomOf="@+id/liqu_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/matcha_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/valerian_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/matchagreen" />
+
+            <TextView
+                android:id="@+id/matcha_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Matcha"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matcha_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/pau_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lemonver_textview3"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/paudarco" />
+
+            <TextView
+                android:id="@+id/pau_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Pau D'Arco"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pau_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/raspberry_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/hempleaf_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/pau_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/liqu_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/raspberryleaf" />
+
+            <TextView
+                android:id="@+id/raspberry_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Raspberry Leaf"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/hempleaf_textview"
+                app:layout_constraintStart_toEndOf="@+id/pau_textview"
+                app:layout_constraintTop_toBottomOf="@+id/raspberry_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/hempleaf_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matcha_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/hempleaf" />
+
+            <TextView
+                android:id="@+id/hempleaf_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Hemp Leaf"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hempleaf_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/hawthorn_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pau_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/hawthorn_berries" />
+
+            <TextView
+                android:id="@+id/hawthorn_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Hawthorn Berries"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hawthorn_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/lavender_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hempleaf_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/lavender_tea" />
+
+            <TextView
+                android:id="@+id/lavender_imagebutton_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Lavender"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lavender_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/hibiscus_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/lavender_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/hawthorn_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/raspberry_textview"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/hibicus_tea" />
+
+            <TextView
+                android:id="@+id/hibiscus_textview"
+                android:layout_width="0dp"
+                android:layout_height="34sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_vegansources"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Hibiscus Tea"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lavender_imagebutton_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/hawthorn_textview"
+                app:layout_constraintTop_toBottomOf="@+id/hibiscus_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

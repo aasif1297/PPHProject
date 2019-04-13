@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.londonsoftware.calisthenics.calisthenics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new_inapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_inapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".CommentsActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC1x1x-ohMoRpSI1VZq74d1z5Rwu9PAmLM" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BegLevel1"
+            android:label="@string/title_activity_beg_level1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BegLevel2"
+            android:label="@string/BegLevel2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BegLevel3"
+            android:label="@string/title_activity_beg_level3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BegLevel4"
+            android:label="@string/title_activity_beg_level4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BegLevel5"
+            android:label="@string/title_activity_beg_level5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntLevel1"
+            android:label="@string/title_activity_int_level1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntLevel2"
+            android:label="@string/title_activity_int_level2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntLevel3"
+            android:label="@string/title_activity_int_level3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntLevel4"
+            android:label="@string/title_activity_int_level4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntLevel5"
+            android:label="@string/title_activity_int_level5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvLevel1"
+            android:label="@string/title_activity_adv_level1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvLevel2"
+            android:label="@string/title_activity_adv_level2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvLevel3"
+            android:label="@string/title_activity_adv_level3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvLevel4"
+            android:label="@string/title_activity_adv_level4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvLevel5"
+            android:label="@string/title_activity_adv_level5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pullups_Exercise"
+            android:label="pullups_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dips_Exercise"
+            android:label="dips_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pushups_Exercise"
+            android:label="pushups_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Core_Exercise"
+            android:label="core_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Legs_Exercise"
+            android:label="legs_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Muscleups_Exercise"
+            android:label="muscleups_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Humanflag_Exercise"
+            android:label="humanflag_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Levers_Exercise"
+            android:label="levers_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Handstands_Exercise"
+            android:label="handstands_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Planche_Exercise"
+            android:label="planche_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Normal_Pullup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Normal_Chinup"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Normal_Closegrip_Pull"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Normal_Closegrip_Chin"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Widegrip_Pull"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Widegrip_Chin"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Bandpulls"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Deadhang"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Isometrics"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Aussie"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Negative"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Neutral"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Commando"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Highpull"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Behindtheneck"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Typewriters"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Archer"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Clapping"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Lsit_Chinup"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Scapula"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weightedpulls"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Onearm"
+            android:label="chinuppullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Ringpulls"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_PushUp"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Situps"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Romantwists"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Plank"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Barkneeraises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Squats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Lunges"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Jumpingsquats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Jumpinglunges"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Sidesquats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Sideplank"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Foamroll"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Widepushup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_FloorLegRaises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Wallsit"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Bulgarian"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_KneePushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_ClosePosition"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Diamond_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Spiderman_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Straightbar_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Russian_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Hindu_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Clapping_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Pike_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Raised_Pike_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Paral_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weighted_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Archer_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Slow_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Raised_Decline_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Pseudo"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Tuckedplanche_pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Handstand_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Planche_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Ringpushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Benchdips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_SB_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Russian_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_SlowDips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_ImpossibleDips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Trans_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Korean_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weighted_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Ring_Dips"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Bar_Legraises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Side_Kneeraises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Hollowholds"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Toestobar"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Lsit"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Ab_Rollouts"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Vsit"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Dragonflags"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weighted_Squats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weighted_Lunges"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Broadjumps"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Assisted_Pistolsquats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Pistolsquats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_GHR"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_BoxJumps"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Normal_Muscleups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Banded_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Slow_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Closegrip_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Widegrip_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Xgrip_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Lsit_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Ring_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Weighted_Muscleup"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_HumanFlag"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Kneetuck_Flag"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Negative_Flag"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Flag_Pullups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Frontlever"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Backlever"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Frontlever_Kneetucks"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Backlever_Kneetucks"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Banded_Levers"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Kneetuck_Raises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Oneleg_frontlever"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Icecream_Makers"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Straddle_Levers"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Lever_Pullups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Handstands_Floor_Var"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Wall_Handstands"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Tigerbend_Handstands"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_NinetyDeg_Handstand"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Planche"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Straddle_Planche"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Planche_Tucks"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Maltese"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Windshield_Wipers"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_FrontSquats"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_GluteBridges"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Oneleg_Glutebridges"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Calfraises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Oneleg_CalfRaises"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Onearm_Pushups"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_SkullCrushers"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_BackExtensions"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fitnessprograms_Disclaimer"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".biceps_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".triceps_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pectorals_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".shoulders_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".scapula_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lats_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".neck_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".abdominals_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".quads_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hamstrings_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".calves_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".glutes_mobility"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Vegan_Protein_Sources"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Herbal_Powders"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hemp_Powder"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pumpkin_Seed_Powder"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chia_Seed_Powder"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pea_Protein_Powder"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rice_Protein_Powder"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Walnut_Flour"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Herbal_Teas"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BMI_Calculator"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Spirilunia"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chlorella"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wheat_Grass"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Barley_Grass"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cacao"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Milk_Thistle"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Acerola_Cherry"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Siberian_Ginseng"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Black_maca"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dong_Quai"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Purpose_root"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ginkgo"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Maitake_Mushroom"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Nettle_Root"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ashwaghanda"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Neem"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Shatvari"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Triphala"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Peppermint_Tea"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Damiana"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dandelion"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chamomile"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Elderberry"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Velarian"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lemon_Ver"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Liqurice"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Matcha"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pau"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Raspberry"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hemp_Leaf"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hawthorn_Berries"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hibiscus"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lavender"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_RepsnSets_homepage"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reps2019tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reps2018tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reps2017tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reps2016tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youtube_Streetworkout_homepage"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SW2016tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SW2017tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SW2018tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SW2019tabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VidofMonthtabs"
+            android:label="normalpullup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PrivacyPolicy" />
+        <activity android:name=".Herbal_Diary" />
+        <activity android:name=".Herbal_Diary_Prelogin" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".NewPostActivity" />
+        <activity android:name=".SetupActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PostActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

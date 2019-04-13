@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    >
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="#e6e6e6"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#4d4d4d"
+            android:id="@+id/exit_popup_barleygrasspowder_nutrition"
+            android:text="X"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/circlebackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brawler"
+            android:layout_marginTop="10dp"
+            android:text="Nutritional Values per 8g Serving:"
+            android:textColor="#404040"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#ff0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin A:  0.95mg   (118.3% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin C:  15.28mg   (19.1% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin E:  0.36mg   (19.1% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin B1:  0.10mg   (8.65% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin B2:  0.19mg   (13.77% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin B3:  0.49mg   (3.04% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Vitamin B6:  0.10mg   (7% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Folate:  0.10mg   (52% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Potassium:  344mg   (17.2% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Calcium:  26.4mg   (3.30% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Phosphorus:  34.4mg   (4.91% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Magnesium:  14.40mg   (3.84% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Iron:  0.8mg   (5.71% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Copper:  0.06mg   (5.76% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/brawler"
+            android:padding="8dp"
+            android:text="Manganese:  0.43mg   (21.60% RDA)"
+            android:textColor="#404040"
+            android:textSize="12sp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre_semibold</item>
+        <item>@font/adamina</item>
+        <item>@font/antic_didone</item>
+        <item>@font/antic_slab</item>
+        <item>@font/arima_madurai_light</item>
+        <item>@font/arima_madurai_medium</item>
+        <item>@font/cambo</item>
+        <item>@font/cinzel</item>
+        <item>@font/rufina</item>
+        <item>@font/vesper_libre</item>
+        <item>@font/yrsa_light</item>
+    </array>
+</resources>

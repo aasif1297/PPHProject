@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Youtube_Planche">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="PLANCHE"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/full_planche"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_advanced_exercises"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="ADVANCED"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/planche_youtubePlay"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_play_planche"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/youtube_logo_new"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="8dp"
+            android:background="#cc2900" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="Video Credit: Osvaldo Lugones (HOW TO PLANCHE FOR BEGINNERS | BY OSVALDO LUGONES)"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Muscles Worked:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arm_muscle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="#336699"
+                app:civ_border_width="1dp"                android:id="@+id/imageView2"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/core_muscle"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/trirong_light"
+                android:background="@drawable/button_design_musclesworked"
+                android:text="prerequisites:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="Straddle Planche"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Equipment Required:"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="Opyional: Access to Parallel Dip Bars or Parallettes"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textSize="13sp"
+                android:gravity="center"                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/trirong_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Technique focal points"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/trirong_light"
+                android:text="\u2022 Start by crouching between either parallette bars or parallel bars with your hands grasping the bars on either side. Make sure your hands are planted a comfortable distance apart, so you'll be able to support your body adequately.\n\n\u2022 Placement of your hands during a full planche is extremely important to its success. Before you lift yourself up, make sure your hands are planted facing forwards, roughly parallel to where your belly button will be when you lift yourself up.\n\n\u2022 With your hands facing forward, put them on the ground (or bars) and lean forward. Keep your arms completely straight as your lean forward.\n\n\u2022  Lunge your lower body into the air with your hands and lie horizontally. All of your body's weight should be focused on your hands. Keep your body straight throughout. Because this technique takes so much upper body strength, it's unlikely that you'll be able to pull one off without training in increments first.\n\n\u2022 Tightening your body will help ensure your body's trunk is firm throughout the planche. Because proper balance is so important during the planche, you need to keep your body straight. Tightening in your abdominal muscles will help keep your body rigid.\n\n\u2022 When you complete the full planche, return yourself slowly to a resting push up position.\n\n\u2022 Repeat as necessary."
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:maxLines="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+            <TextView
+                android:id="@+id/detail_read_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/ic_expand_more_black"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

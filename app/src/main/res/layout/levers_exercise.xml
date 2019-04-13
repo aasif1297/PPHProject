@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Levers_Exercise">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="LEVERS"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/front_lever_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/frontlever" />
+
+            <TextView
+                android:id="@+id/pullup_normal_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Front Lever"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/front_lever_imagebutton"
+                app:layout_constraintWidth_percent="0.30" />
+
+            <ImageButton
+                android:id="@+id/frontlever_kneetucks_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/frontlever_tuck" />
+
+            <TextView
+                android:id="@+id/chinup_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Back Lever"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/pull_closegrip_textview"
+                app:layout_constraintStart_toEndOf="@+id/pullup_normal_textview"
+                app:layout_constraintTop_toBottomOf="@+id/back_lever_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/back_lever_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/frontlever_kneetucks_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/front_lever_imagebutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/backlever" />
+
+            <TextView
+                android:id="@+id/pull_closegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Front Lever Knee Tucks"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frontlever_kneetucks_imagebutton"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.30" />
+
+
+            <ImageButton
+                android:id="@+id/banded_levers_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lever_raises_imagebuttonon"
+                app:layout_constraintStart_toEndOf="@+id/backlever_kneetucks_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/chinup_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/band_levers" />
+
+            <TextView
+                android:id="@+id/pull_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Banded Levers"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/chin_widegrip_textview"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintTop_toBottomOf="@+id/banded_levers_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/backlever_kneetucks_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pullup_normal_textview"
+                app:layout_constraintVertical_bias="0.002"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/backlever_tuck" />
+
+            <TextView
+                android:id="@+id/chin_closegrip_textview2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Back Lever Knee Tucks"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backlever_kneetucks_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/lever_raises_imagebuttonon"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pull_closegrip_textview"
+                app:layout_constraintVertical_bias="0.001"
+                app:layout_constraintWidth_percent="0.30"
+                app:srcCompat="@drawable/lever_raises" />
+
+            <TextView
+                android:id="@+id/chin_widegrip_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Lever Raises"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lever_raises_imagebuttonon"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/one_leg_frontlever_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_closegrip_textview2"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/oneleg_frontlever" />
+
+            <TextView
+                android:id="@+id/bandpulls_textview3"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="One Leg Front Lever"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/one_leg_frontlever_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+
+            <ImageButton
+                android:id="@+id/iccream_makers_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chin_widegrip_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/icecream_makers" />
+
+            <TextView
+                android:id="@+id/isometric_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Ice Cream Makers"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iccream_makers_imagebutton"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/straddle_levers_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iccream_makers_imagebutton"
+                app:layout_constraintStart_toEndOf="@+id/one_leg_frontlever_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/pull_widegrip_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/straddle_frontlever" />
+
+            <TextView
+                android:id="@+id/austa_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Straddle Front/Back Levers"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/straddle_levers_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+            <ImageButton
+                android:id="@+id/lever_pullups_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bandpulls_textview3"
+                app:layout_constraintWidth_percent="0.3"
+                app:srcCompat="@drawable/lever_pullups" />
+
+            <TextView
+                android:id="@+id/negative_textview"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_musclesworked"
+                android:fontFamily="@font/antic_didone"
+                android:gravity="center"
+                android:text="Lever Pull Ups"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lever_pullups_imagebutton"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

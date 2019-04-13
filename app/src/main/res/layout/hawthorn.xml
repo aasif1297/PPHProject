@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Hawthorn_Berries">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Hawthorn Berries"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hawthorn_berries"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Crataegus laevigata"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Haw, May, Mayblossom, Mayflower."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:fontFamily="@font/brawler"
+            android:text="The Hawthorn tree is steeped in Celtic mythology and history, with many believing that the trees were inhabited by the Faery Folk. One particular story is that of one 'Thomas the Rhymer', a Scottish mystic and poet of the thirteenth century. It is said he met the Faery Queen by a Hawthorn bush from where she led him on a brief sojourn into the Faery Underworld. Upon returning from his adventure he found he had been absent for seven years!\n\nHawthorn Berries have been extensively studied in relation to congestive heart failure, with findings concurring that symptoms such as shortness of breath and tiredness can be dramatically improved. One study found that 900mg daily of Hawthorn Berry extract was as effective at managing the symptoms of congestive heart failure as its pharmaceutical counterpart. Strongly supporting healthy cardiac rhythm (heartbeat), Hawthorn improves heart cell metabolism and enhances the flow of electrolytes across the cardiac cells. The flavones contained within this berry enhance the function of cardiac enzymes which can improve the heart’s ability to withstand stress.\n\nAngina sufferers can greatly benefit from this herb. One study found that 100mg of Hawthorn extract taken 3 times a day decreased angina in 91% of the participants as opposed to only 37% in the placebo group. It is thought this effect is down to the ability of Hawthorn to increase blood flow to the heart by dilating both peripheral and coronary blood vessels.\n\nHawthorn Berries stimulate bile and gastric secretions, aiding in the digestion of stagnant food in the GI tract, especially that which is rich in fats or protein.They also contain various organic compounds that interact with gut flora to improve the digestion of nutrients."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+    </LinearLayout>
+
+</ScrollView>

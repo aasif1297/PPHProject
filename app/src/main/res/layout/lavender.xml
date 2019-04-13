@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Lavender">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Lavender"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/lavender_tea"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name: Lavandula officinalis"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/brawler"
+            android:text="Also known as: Lavendel."
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:text="Lavender is probably the most well known medicinal herb. Originally from France and the western Mediterranean, lavender is now cultivated world wide. The Romans were responsible for the spread of Lavender throughout Europe and used Lavender in the famous Roman bath houses. They most certainly used Lavender in the fumigation of a sick room, or in preparation for childbirth. Traditionally the fragrance of lavender was thought to bring good luck and lift sorrow.\n\nLavender is comprised mainly of linalyl acetate and linalool - phytochemicals that are absorbed rapidly into the bloodstream. Research shows that these compounds inhibit several neurotransmitters causing a sedative and anxiolytic effect.\n\nLavender has been used for centuries as a remedy for anxiety and depression. It has a complex mix of active components including 'terpenes' - small molecules that are absorbed into the bloodstream via the nose or lungs. They are so small that they easily cross the blood/brain barrier and have an impact on neurological processes. Lavender has been proven as effective at treating anxiety as its pharmaceutical counterparts. In a study published in the journal 'Phytomedicine', it was shown that lavender helps with restless, nervousness, anxiety and insomnia.\n\nLavender has long been used as a digestive aid. It improves the motility of intestinal tract, allowing food to pass through more readily. Gastric juice production, including bile, is increased which improves digestion and nutrient absorption. Colic, vomiting, and flatulence can all be helped through the use of this herb. An interesting benefit is that Lavender gently inhibits the growth of pathogens, but according to one study, it doesn't harm beneficial bacteria. How it distinguishes between harmful and beneficial bacteria is a still a mystery."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+    </LinearLayout>
+
+</ScrollView>

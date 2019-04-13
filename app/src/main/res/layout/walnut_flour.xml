@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Walnut_Flour">
+
+
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="WALNUT FLOUR"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/walnutflour"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/brawler"
+            android:text="Latin Name:  Juglans cinerea"
+            android:textStyle="bold" />
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_design_macrosbutton3"
+                android:fontFamily="serif"
+                android:onClick="ShowPopup_walnut"
+                android:padding="2dp"
+                android:text="MACROS"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brawler"
+            android:maxLines="4"
+            android:id="@+id/hemptext"
+            android:text="As far back as 2000 BCE, the Chaldeans of Mesopotamia left inscriptions on clay tablets telling of walnut groves which graced the famous 'Hanging Gardens of Babylon'. These are the earliest written records mentioning walnuts. The humble walnut makes an appearance in Greek mythology in the story of Carya, with whom the god Dionysus fell in love - when she died he transformed her into a walnut tree. Having been given the gift of prophesy by Apollo, the walnut tree was known as an oracular tree in Ancient Greece.\n\nBearing a striking resemblance to tiny brains, walnuts are packed with brain boosting nutrients and are recognised as one of the ultimate brain foods. They contain a number of neuroprotective compounds, with the highest amounts of Omega 3 of any nut – this fatty acid is critical to the health and smooth functioning of this most important organ. Some recent research has found that walnuts can also increase neurogenesis – the growth of new brain cells – a crucial aspect of maintaining brain health. They have been shown to improve the signalling amongst neurons within the brain and various properties within walnuts could possibly prevent neurodegeneration, a process which can lead to a whole host of disorders.\n\nWalnuts contain several unique and powerful antioxidants that are available in only a few commonly eaten foods. These include the quinone juglone, the tannin tellimagrandin, and the flavonol morin. These antioxidants are so powerful at free radical scavenging that research has shown they may prevent chemically induced liver damage, improve lipid profile and reduce inflammation – the precursor to almost all chronic disease.\n\nWalnuts are, again, unique because they are rich in n-6 (linoleate) and n-3 (linolenate) polyunsaturated fatty acids. These particular fatty acids have been shown to have a beneficial effect upon cardiovascular disease. They also contain the amino acid l-arginine which offers multiple vascular benefits to people with heart disease, or those who have increased risk for heart disease due to multiple cardiac risk factors. It is a key nutrient in promoting efficient blood flow and overall cardiovascular function."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/detail_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="Read More"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="10.5sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_design_mobilitybutton"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hemptext" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

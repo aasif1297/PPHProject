@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6d8ec"
+    tools:context="com.londonsoftware.calisthenics.calisthenics.Youtube_Streetworkout_homepage">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#008ae6"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="STREET WORKOUT BATTLES"
+            app:titleTextAppearance="@style/TabToolbar.TitleText"
+            app:titleTextColor="@android:color/white">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_sw2019"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#cc2900"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/sw2019"
+                app:layout_constraintEnd_toStartOf="@+id/circleImageView2_sw2018"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.35"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <Button
+                android:id="@+id/textview_sw2019"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_macrosbutton"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="2019"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView_sw2019"
+                app:layout_constraintWidth_percent="0.40" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView2_sw2018"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#336699"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/sw2018"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.35"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <Button
+                android:id="@+id/textview_sw2018"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_design_macrosbutton_2018"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="2018"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView2_sw2018"
+                app:layout_constraintWidth_percent="0.40" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView3_sw2017"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                app:civ_border_width="3dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="8dp"
+                app:civ_border_color="#cca300"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintHeight_percent="0.35"
+                android:src="@drawable/sw2017"
+                app:layout_constraintEnd_toStartOf="@+id/circleImageView4_sw2016"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_sw2019"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <Button
+                android:id="@+id/textview3_sw2017"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_macrosbutton_2017"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="2017"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView3_sw2017"
+                app:layout_constraintVertical_bias="0.258"
+                app:layout_constraintWidth_percent="0.40" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView4_sw2016"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="46dp"
+                app:civ_border_color="#267326"
+                app:civ_border_width="3dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/sw2016"
+                app:layout_constraintHeight_percent="0.35"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_sw2018"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <Button
+                android:id="@+id/textview4_sw2016"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_design_macrosbutton_2016"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="2016"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView4_sw2016"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.40" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
