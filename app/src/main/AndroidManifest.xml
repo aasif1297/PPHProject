@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".CommentsActivity"></activity>
+        <activity android:name=".CommentsActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -919,6 +919,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".RessetPasswordActivity"></activity>
     </application>
 
 </manifest>

@@ -132,4 +132,14 @@
         android:background="@android:color/holo_red_light"
         android:text="signin with google " />
 
+    <TextView
+        android:id="@+id/txt_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_username_edittxt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="218dp"
+        android:text="forgot password "
+        android:textColor="@android:color/holo_red_dark" />
+
 </RelativeLayout>
